@@ -1,0 +1,35 @@
+#homeBody{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F9D2AD;
+    
+    height: fit-content;
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    grid-template-rows: 4vw 75vw 15vw;
+
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+
+}
+
+#HeaderHomeStyles{
+    grid-area: header;
+    background-color: #831919;
+    display: flex;
+}
+#MainHomeStyles{
+    grid-area: main;
+    background-image: url("../img/imageCoffe.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 9;
+    background-size: cover;
+}
+#FooterHomeStyles{
+    grid-area: footer;
+    background-color: rgb(128, 68, 0);
+}
+
